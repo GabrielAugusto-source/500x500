@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-img = Image.open('assets/evolution_120822.png').convert('RGBA')
+img = Image.open('assets/image_1.png').convert('RGBA')
 
 
 img.thumbnail((420, 420), Image.Resampling.LANCZOS)
@@ -18,5 +18,5 @@ y = (500 - altura) // 2
 canvas.paste(img, (x, y), img)
 
 
-canvas.convert('RGB').save('assets/evolution_quadrada.png')
-print("Imagem quadrada gerada com sucesso em assets/evolution_quadrada.png!")
+canvas.convert('RGB').save('assets/image_2.png')
+print("Imagem quadrada gerada com sucesso em assets/image_2.png!")
